@@ -1,15 +1,30 @@
-NORMAL_SERVICE = "00"
+NORMAL_SERVICE = "00"  # 정상적으로 통신되었을 때의 resultCode
 
 
 class OpenAPIError(Exception):
+    """OpenAPI 의 응답이 NORMAL_SERVICE 가 아닐 때의 에러"""
     pass
 
 
 class ServiceKeyError(Exception):
+    """공공데이터 포털에서 제공한 ServiceKey 가 올바르지 않거나 등록이 안되었을 때의 에러"""
     pass
 
 
 def decode_key(key):
+    """공공데이터 포털에서 제공한 ServiceKey 는 
+    기본적으로 URL ENCODING 이 되어 있으므로 URL DECODING 을 해야 정상적으로 작동한다.
+    공공데이터 포털에서 제공하는 key 를 입력으로 넣으면 그 key 의 url decoding 값을 반환한다.
+
+    Arguments:
+        key: 공공데이터 포털에서 제공하는 ServiceKey (URL Encoding 되어있는 상태)
+    
+    Returns:
+        str: URL decoding 된 ServiceKey
+
+    Dependencies:
+        from urllib.parse import unquote
+    """
     from urllib.parse import unquote
 
     return unquote(key)
@@ -60,34 +75,98 @@ def get_temperature_raw_data(start_date, end_date, station_id, key, page_no):
 
 
 def get_header(raw_data):
+    """OpenAPI 의 JSON 응답값을 넣으면 응답값의 header 를 반환하는 함수
+
+    Arguments:
+        raw_data: OpenAPI 의 JSON 응답값
+
+    Returns:
+        dict: 응답값의 header
+    """
     return raw_data["response"]["header"]
 
 
 def get_result_code(raw_data):
+    """OpenAPI 의 JSON 응답값을 넣으면 응답값의 resultCode 를 반환하는 함수
+
+    Arguments:
+        raw_data: OpenAPI 의 JSON 응답값
+
+    Returns:
+        dict: 응답값의 resultCode
+    """
     return get_header(raw_data)["resultCode"]
 
 
 def get_result_message(raw_data):
+    """OpenAPI 의 JSON 응답값을 넣으면 응답값의 resultMsg 를 반환하는 함수
+
+    Arguments:
+        raw_data: OpenAPI 의 JSON 응답값
+
+    Returns:
+        dict: 응답값의 resultMsg
+    """
     return get_header(raw_data)["resultMsg"]
 
 
 def get_body(raw_data):
+    """OpenAPI 의 JSON 응답값을 넣으면 응답값의 body 를 반환하는 함수
+
+    Arguments:
+        raw_data: OpenAPI 의 JSON 응답값
+
+    Returns:
+        dict: 응답값의 body 
+    """
     return raw_data["response"]["body"]
 
 
 def get_page_no(raw_data):
+    """OpenAPI 의 JSON 응답값을 넣으면 응답값의 pageNo 를 반환하는 함수
+
+    Arguments:
+        raw_data: OpenAPI 의 JSON 응답값
+
+    Returns:
+        dict: 응답값의 pageNo 
+    """
     return get_body(raw_data)["pageNo"]
 
 
 def get_total_count(raw_data):
+    """OpenAPI 의 JSON 응답값을 넣으면 응답값의 totalCount 를 반환하는 함수
+
+    Arguments:
+        raw_data: OpenAPI 의 JSON 응답값
+
+    Returns:
+        dict: 응답값의 totalCount
+    """
     return get_body(raw_data)["totalCount"]
 
 
 def get_num_of_rows(raw_data):
+    """OpenAPI 의 JSON 응답값을 넣으면 응답값의 numOfRows 를 반환하는 함수
+
+    Arguments:
+        raw_data: OpenAPI 의 JSON 응답값
+
+    Returns:
+        dict: 응답값의 numOfRows 
+    """
     return get_body(raw_data)["numOfRows"]
 
 
 def get_items(raw_data):
+    """OpenAPI 의 JSON 응답값을 넣으면 응답값의 items 를 반환하는 함수
+
+    Arguments:
+        raw_data: OpenAPI 의 JSON 응답값
+
+    Returns:
+        dict: 응답값의 items
+    """
     return get_body(raw_data)["items"]["item"]
 
 
@@ -114,6 +193,18 @@ def is_complete(page_no, num_of_rows, total_count):
 
 
 def get_temperature_data(start_date, end_date, station_id, key):
+    """기온데이터를 가져오기 위한 함수
+    내부적으로 http://apis.data.go.kr/1360000/AsosDalyInfoService/getWthrDataList 에 통신하여 값을 들고온다.
+    값이 여러개라 한번의 요청으로 들고올 수 없는 경우 여러번 요청하여 들고온다.
+
+    Arguments:
+        start_date: 조회 시작 일자 (YYYYMMDD)
+        end_date: 조회 종료 일자 (YYYYMMDD)
+        station_id: 조회할 지점 번호 (종관기상관측 지점 번호 문서 참고)
+
+    Returns:
+        dict: 조회된 데이터를 json 형식으로 반환한다.
+    """
     data = []
     page_no = 0
 
