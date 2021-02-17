@@ -15,3 +15,7 @@
 - Python 3.6 ~
 - pandas 0.24.0 ~
 - numpy 1.15.3 ~
+
+# Slides
+https://www.slideshare.net/ssuserc13d7b1/python-data-analysis-library  
+https://www.slideshare.net/ssuserc13d7b1/data-collection-and-preprocessing
