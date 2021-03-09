@@ -10,7 +10,8 @@
 
 1. [numpy](https://colab.research.google.com/github/pparkddo/nano-degree/blob/master/numpy.ipynb)
 2. [pandas](https://colab.research.google.com/github/pparkddo/nano-degree/blob/master/pandas.ipynb)
-3. [preprocessing](https://colab.research.google.com/github/pparkddo/nano-degree/blob/master/preprocessing.ipynb)
+3. [excercises](https://colab.research.google.com/github/pparkddo/nano-degree/blob/master/excercises.ipynb)
+4. [preprocessing](https://colab.research.google.com/github/pparkddo/nano-degree/blob/master/preprocessing.ipynb)
 
 # Requirements
 
