@@ -6,20 +6,22 @@
 `.ipynb` 형식의 파일이 제공되며 설치 후 원하는 ipynb viewer 를 통해 볼 수 있습니다.  
 `jupyter notebook` 또는 `google colab` 을 이용해서 보는 것을 추천합니다.
 
-# Contents
-
+## Contents
 1. [numpy](https://colab.research.google.com/github/pparkddo/nano-degree/blob/master/numpy.ipynb)
 2. [pandas](https://colab.research.google.com/github/pparkddo/nano-degree/blob/master/pandas.ipynb)
 3. [exercises](https://colab.research.google.com/github/pparkddo/nano-degree/blob/master/exercises.ipynb)
 4. [problems](https://colab.research.google.com/github/pparkddo/nano-degree/blob/master/problems.ipynb)
 5. [preprocessing](https://colab.research.google.com/github/pparkddo/nano-degree/blob/master/preprocessing.ipynb)
 
-# Requirements
-
+## Requirements
 - Python 3.6 ~
 - pandas 0.24.0 ~
 - numpy 1.15.3 ~
 
-# Slides
+## Slides
 - https://www.slideshare.net/ssuserc13d7b1/python-data-analysis-library  
 - https://www.slideshare.net/ssuserc13d7b1/data-collection-and-preprocessing
+
+
+## Releases
+- Pandas 강의에 시각화 내용 추가 (2021-04-06)
