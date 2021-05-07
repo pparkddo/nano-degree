@@ -18,11 +18,5 @@
 - pandas 0.24.0 ~
 - numpy 1.15.3 ~
 
-## Slides
-- https://www.slideshare.net/ssuserc13d7b1/python-data-analysis-library  
-- https://www.slideshare.net/ssuserc13d7b1/data-collection-and-preprocessing
-
-
 ## Releases
 > 각 강의날에 했던 강의자료들은 [Tag](https://github.com/pparkddo/nano-degree/tags) 에서 확인가능합니다.
-- Pandas 강의에 시각화 내용 추가 (2021-04-06)
