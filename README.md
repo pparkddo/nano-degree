@@ -7,11 +7,12 @@
 `jupyter notebook` 또는 `google colab` 을 이용해서 보는 것을 추천합니다.
 
 ## Contents
-1. [numpy](https://colab.research.google.com/github/pparkddo/nano-degree/blob/master/numpy.ipynb)
-2. [pandas](https://colab.research.google.com/github/pparkddo/nano-degree/blob/master/pandas.ipynb)
-3. [exercises](https://colab.research.google.com/github/pparkddo/nano-degree/blob/master/exercises.ipynb)
-4. [problems](https://colab.research.google.com/github/pparkddo/nano-degree/blob/master/problems.ipynb)
-5. [preprocessing](https://colab.research.google.com/github/pparkddo/nano-degree/blob/master/preprocessing.ipynb)
+1. [python](https://colab.research.google.com/github/pparkddo/nano-degree/blob/master/python.ipynb)
+2. [numpy](https://colab.research.google.com/github/pparkddo/nano-degree/blob/master/numpy.ipynb)
+3. [pandas](https://colab.research.google.com/github/pparkddo/nano-degree/blob/master/pandas.ipynb)
+4. [exercises](https://colab.research.google.com/github/pparkddo/nano-degree/blob/master/exercises.ipynb)
+5. [problems](https://colab.research.google.com/github/pparkddo/nano-degree/blob/master/problems.ipynb)
+6. [preprocessing](https://colab.research.google.com/github/pparkddo/nano-degree/blob/master/preprocessing.ipynb)
 
 ## Requirements
 - Python 3.6 ~
