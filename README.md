@@ -8,11 +8,12 @@
 
 ## Contents
 1. [python](https://colab.research.google.com/github/pparkddo/nano-degree/blob/master/python.ipynb)
-2. [numpy](https://colab.research.google.com/github/pparkddo/nano-degree/blob/master/numpy.ipynb)
-3. [pandas](https://colab.research.google.com/github/pparkddo/nano-degree/blob/master/pandas.ipynb)
-4. [exercises](https://colab.research.google.com/github/pparkddo/nano-degree/blob/master/exercises.ipynb)
-5. [problems](https://colab.research.google.com/github/pparkddo/nano-degree/blob/master/problems.ipynb)
-6. [preprocessing](https://colab.research.google.com/github/pparkddo/nano-degree/blob/master/preprocessing.ipynb)
+2. [python-exercises](https://colab.research.google.com/github/pparkddo/nano-degree/blob/master/python-exercises.ipynb)
+3. [numpy](https://colab.research.google.com/github/pparkddo/nano-degree/blob/master/numpy.ipynb)
+4. [pandas](https://colab.research.google.com/github/pparkddo/nano-degree/blob/master/pandas.ipynb)
+5. [exercises](https://colab.research.google.com/github/pparkddo/nano-degree/blob/master/exercises.ipynb)
+6. [problems](https://colab.research.google.com/github/pparkddo/nano-degree/blob/master/problems.ipynb)
+7. [preprocessing](https://colab.research.google.com/github/pparkddo/nano-degree/blob/master/preprocessing.ipynb)
 
 ## Requirements
 - Python 3.6 ~
