@@ -14,7 +14,7 @@
 6. [exercises](https://colab.research.google.com/github/pparkddo/nano-degree/blob/master/exercises.ipynb)
 7. [problems](https://colab.research.google.com/github/pparkddo/nano-degree/blob/master/problems.ipynb)
 8. [task](https://colab.research.google.com/github/pparkddo/nano-degree/blob/master/task.ipynb)
-8. [preprocessing](https://colab.research.google.com/github/pparkddo/nano-degree/blob/master/preprocessing.ipynb)
+9. [preprocessing](https://colab.research.google.com/github/pparkddo/nano-degree/blob/master/preprocessing.ipynb)
 
 ## Requirements
 - Python 3.6 ~
