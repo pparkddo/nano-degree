@@ -13,6 +13,7 @@
 5. [pandas](https://colab.research.google.com/github/pparkddo/nano-degree/blob/master/pandas.ipynb)
 6. [exercises](https://colab.research.google.com/github/pparkddo/nano-degree/blob/master/exercises.ipynb)
 7. [problems](https://colab.research.google.com/github/pparkddo/nano-degree/blob/master/problems.ipynb)
+8. [task](https://colab.research.google.com/github/pparkddo/nano-degree/blob/master/task.ipynb)
 8. [preprocessing](https://colab.research.google.com/github/pparkddo/nano-degree/blob/master/preprocessing.ipynb)
 
 ## Requirements
